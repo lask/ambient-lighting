@@ -38,7 +38,7 @@ Prepare the open source Toit language by following the steps [here](https://gith
 Compile an ESP32 image from the light sensor program:
 ```
 cd <path-to-toit-lang>
-make esp32 ESP32_ENTRY=<path-to-repository>/als_sensor.toit ESP32_WIFI_SSID=<wifi-ssid> ESP32_WIFI_PASSWORD=<wifi-password>
+make esp32 ESP32_ENTRY=<path-to-repository>/src/als_sensor.toit ESP32_WIFI_SSID=<wifi-ssid> ESP32_WIFI_PASSWORD=<wifi-password>
 ```
 Connect the ESP32 that controls the light sensor to your computer and flash the program by pasting the output from `make esp32` into the terminal.
 
@@ -46,7 +46,7 @@ Connect the ESP32 that controls the light sensor to your computer and flash the 
 Compile an ESP32 image from the pixel strip program program:
 ```
 cd <path-to-toit-lang>
-make esp32 ESP32_ENTRY=<path-to-repository>/pixel_strip.toit ESP32_WIFI_SSID=<wifi-ssid> ESP32_WIFI_PASSWORD=<wifi-password>
+make esp32 ESP32_ENTRY=<path-to-repository>/src/pixel_strip.toit ESP32_WIFI_SSID=<wifi-ssid> ESP32_WIFI_PASSWORD=<wifi-password>
 ```
 Connect the ESP32 that controls the light sensor to your computer and flash the program by pasting the output from `make esp32` into the terminal.
 
