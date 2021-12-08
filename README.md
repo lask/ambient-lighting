@@ -1,6 +1,10 @@
 # Ambient lighting
 Inverse the natural ambient lighting in a room. This project consists of a light sensor (VCNL4040 sensor connected to an ESP32) and any number of ESP32s connected to 30 LED NeoPixel strips. The light sensor broadcasts ambient lighting data on UDP which is received by the LED strips.
 
+![ambient lighting](media/ambient-lighting.gif)
+
+<img src="media/als-sensor.jpg" alt="drawing" width="600"/>
+
 ## Step by step
 ### 1. Components
 The project uses the following components:
@@ -37,7 +41,7 @@ Prepare the open source Toit language by following the steps [here](https://gith
 #### Light sensor
 Compile an ESP32 image from the light sensor program:
 ```
-cd <path-to-toit-lang>
+cd <path-to-toit-la)ng>
 make esp32 ESP32_ENTRY=<path-to-repository>/src/als_sensor.toit ESP32_WIFI_SSID=<wifi-ssid> ESP32_WIFI_PASSWORD=<wifi-password>
 ```
 Connect the ESP32 that controls the light sensor to your computer and flash the program by pasting the output from `make esp32` into the terminal.
