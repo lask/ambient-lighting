@@ -41,7 +41,7 @@ Prepare the open source Toit language by following the steps [here](https://gith
 #### Light sensor
 Compile an ESP32 image from the light sensor program and flash it with:
 ```
-cd <path-to-toit-la)ng>
+cd <path-to-toit-lang>
 make flash ESP32_ENTRY=<path-to-repository>/src/als_sensor.toit ESP32_WIFI_SSID=<wifi-ssid> ESP32_WIFI_PASSWORD=<wifi-password> ESP32_PORT=<device-port>
 ```
 Connect the ESP32 that controls the light sensor to your computer and flash the program by pasting the output from `make esp32` into the terminal.
