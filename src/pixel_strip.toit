@@ -12,7 +12,7 @@ STEPS_ ::= [27, 23, 19, 16]
 PIXELS ::= 30
 
 compute_color als max_val -> int:
-  return als == 0 ? max_val : max 0 max_val - ((math.log als 2) / (math.log 2500 2) * max_val).to_int
+  return max 0 max_val - ((math.pow als 3) / (math.pow 2500 3) * max_val).to_int
 
 als_to_brightness als/int r/ByteArray g/ByteArray b/ByteArray :
   als = als < 20 ? 0 : als - 20
